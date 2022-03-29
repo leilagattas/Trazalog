@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TSDXC59');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trazalog</title>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800;900&family=Roboto&family=Work+Sans:wght@500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"
+        media="screen" />
+    <link rel="icon" href="./assets/logo.jpg">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TSDXC59" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <nav>
+        <img src="./assets/logo_footer.png" alt="logoTrazalog">
+    </nav>
+    <main>
+        <div id="seccion1">
+            <div id="first">
+                <img class="displayDesk" src="./assets/Trazalog_marca-footer-2.png" alt="logoTrazalog">
+                <h1>Somos la única plataforma MRP de <b style="font-weight: 700;">trazabilidad y gestión de tareas</b>
+                </h1>
+            </div>
+            <form action="mail.php" method="POST" id="sendMailForm">
+                <h3>Contactanos</h3>
+                <div class="datosForm" id="form-mail">
+                    <div>
+                        <label for="name">Nombre</label><br>
+                        <input type="text" id="name" name="name" value="" required><br>
+                    </div>
+                    <div>
+                        <label for="empresa">Empresa</label><br>
+                        <input type="text" id="empresa" name="empresa" value="" required><br>
+                    </div>
+                    <div>
+                        <label for="telefono">Teléfono</label><br>
+                        <input type="number" id="telefono" name="telefono" value="" required><br>
+                    </div>
+                    <div>
+                        <label for="mail">Mail</label><br>
+                        <input type="email" id="mail" name="mail" value="" required><br>
+                    </div>
+                </div>
+                <div class="datosFormSec">
+                    <label for="usuarios">Cantidad de usuarios</label><br>
+                    <input type="number" id="usuarios" name="usuarios" value="" required><br>
+                    <label for="msj">¿Cómo podemos ayudarte?</label><br>
+                    <textarea name="msj" id="mensaje" cols="30" rows="10" required></textarea> <br>
+                </div>
+                <input type="submit" value="Enviar" id="submitEmail">
+            </form>
+        </div>
+        <div id="seccion2">
+            <h2>VENTAJAS DE NUESTRA <span>HERRAMIENTA MPR</span></h2>
+            <p>Usamos Open Source, tecnología que contempla todos los aspectos necesarios para la digitalización de tu
+                empresa.</p>
+            <div id="ventajasDesk">
+                <div>
+                    <img src="./assets/cono_escalabilidad.png" alt="conoEscalabilidad">
+                    <h3>Escalabilidad</h3>
+                    <p>Permite iniciar con la solución que más necesites y luego poder adicionar más módulos más usuario
+                        y más unidades de negocios.
+                    </p>
+                </div>
+                <div>
+                    <img src="./assets/cono_nube.png" alt="conoNube">
+                    <h3>Cloud</h3>
+                    <p>Tu solución puede funcionar en nube ahorrando gastos de mantenimiento de servidores, y asegurando
+                        la seguridad de la información.</p>
+                </div>
+                <div>
+                    <img src="./assets/cono_adaptabilidad.png" alt="conoAdaptabilidad">
+                    <h3>Adaptabilidad</h3>
+                    <p>Con nuestro módulo de procesos podemos adaptarnos a tu negocio, logrando visibilizar los roles de
+                        tu proceso digitalizar tu planilla y agilizar tu comunicación interna.</p>
+                </div>
+                <div>
+                    <img src="./assets/cono_movilidad.png" alt="conoMovilidad">
+                    <h3>Movilidad</h3>
+                    <p>Con nuestro producto podrás cargar y acceder a tu información en cualquier sector de la empresa o
+                        fuera de ella desde tu dispositivo electrónico
+                    </p>
+                </div>
+                <div>
+                    <img src="./assets/cono_intengracion.png" alt="conoIntengracion">
+                    <h3>Integración</h3>
+                    <p>Si ya tenés un software de gestión nos integramos a él con el objetivo de duplicar información y
+                        mantenerla unificada</p>
+                </div>
+                <div>
+                    <img src="./assets/cono_usabilidad.png" alt="conoUsabilidad">
+                    <h3>Usabilidad</h3>
+                    <p>Nuestro equipo de UX trabaja todos los días, de manera ininterrumpida para lograr la mejor
+                        experiencia de uso y navegación.</p>
+                </div>
+            </div>
+
+            <div id="carouselExampleFade" class="carousel slide carousel-fade displayMobile" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <div class="d-block w-70 slidesMob">
+                            <img src="./assets/cono_escalabilidad.png" alt="conoEscalabilidad">
+                            <h3>Escalabilidad</h3>
+                            <p>Permite iniciar con la solución que más necesites y luego poder adicionar más módulos más
+                                usuario
+                                y más unidades de negocios.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100">
+                            <img src="./assets/cono_nube.png" alt="conoNube">
+                            <h3>Cloud</h3>
+                            <p>Tu solución puede funcionar en nube ahorrando gastos de mantenimiento de servidores, y
+                                asegurando
+                                la seguridad de la información.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <div class="d-block w-100">
+                            <img src="./assets/cono_adaptabilidad.png" alt="conoAdaptabilidad">
+                            <h3>Adapatabilidad</h3>
+                            <p>Con nuestro módulo de procesos podemos adaptarnos a tu negocio, logrando visibilizar los
+                                roles de
+                                tu proceso digitalizar tu planilla y agilizar tu comunicación interna.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100">
+                            <img src="./assets/cono_movilidad.png" alt="conoMovilidad">
+                            <h3>Movilidad</h3>
+                            <p>Con nuestro producto podrás cargar y acceder a tu información en cualquier sector de la
+                                empresa o
+                                fuera de ella desde tu dispositivo electrónico
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100"> <img src="./assets/cono_intengracion.png" alt="conoIntengracion">
+                            <h3>Integración</h3>
+                            <p>Si ya tenés un software de gestión nos integramos a él con el objetivo de duplicar
+                                información y
+                                mantenerla unificada</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100"> <img src="./assets/cono_usabilidad.png" alt="conoUsabilidad">
+                            <h3>Usabilidad</h3>
+                            <p>Nuestro equipo de UX trabaja todos los días, de manera ininterrumpida para lograr la
+                                mejor
+                                experiencia de uso y navegación.</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+        </div>
+
+        <div id="seccion3" class="displayDesk">
+            <img src="./assets/computers.png" alt="computers"><br>
+            <button onclick="irAgenda()">AGENDÁ TU DEMO</button>
+        </div>
+        <button id="agendaDemo" class="displayMobile" onclick="irAgenda()">AGENDÁ TU DEMO</button>
+        <div id="seccion4">
+            <h2>BRINDAMOS EL MAYOR ALCANCE FUNCIONAL DEL MERCADO CON NUESTRO SISTEMA DE <span>GESTIÓN MRP</span>
+            </h2>
+            <div class="alcance displayDesk">
+                <div class="gestionmrp">
+                    <img src="./assets/conos_Trazalog_Mesa-de-trabajo-1.png" alt="procesos">
+                    <p>
+                        <span>Procesos</span> <br>
+                        Este módulo permite gestionar los procesos de negocios de tu organización visibilizando
+                        roles y
+                        responsabilidades dentro del equipo
+                    </p>
+                </div>
+                <div class="gestionmrp">
+                    <img src="./assets/conos_Trazalog-04.png" alt="procesos">
+                    <p>
+                        <span>Mantenimiento</span><br>
+                        Con este módulo se puede mantener activo un plan integral de mantenimiento preventivo y
+                        correctivo de todos los equipos.
+                    </p>
+                </div>
+                <div class="gestionmrp">
+                    <img src="./assets/conos_Trazalog-02.png" alt="produccion">
+                    <p>
+                        <span>Producción</span><br>
+                        Sigue el proceso de órdenes de producción, para una gestión eficiente y económica de los
+                        recursos materiales y de trabajo utilizados en cada etapa.
+                    </p>
+                </div>
+                <div class="gestionmrp">
+                    <img src="./assets/conos_Trazalog-05.png" alt="tareas">
+                    <p>
+                        <span>Tareas</span><br>
+                        El modulo tareas se encarga de gestionar y trazar el proceso de asignación, puesta en
+                        producción
+                        y ejecución de todas las actividades.
+                    </p>
+                </div>
+                <div class="gestionmrp">
+                    <img src="./assets/conos_Trazalog-03.png" alt="almacenes">
+                    <p>
+                        <span>Almacenes</span><br>
+                        Permiten conocer el histórico, ubicación y trayectoria de un producto . Se trata de un
+                        sistema
+                        eficaz y necesario para la buena gestión de toda la cadena de suministro.
+                    </p>
+                </div>
+                <div class="gestionmrp">
+                    <img src="./assets/conos_Trazalog-06.png" alt="procesos">
+                    <p>
+                        <span>Pañol</span><br>
+                        Controle sus herramientas de manera fácil y segura identificando y trazando todo los
+                        movimientos
+                        de cada una de ellas, cómo así tambíen de componentes críticos.
+                    </p>
+                </div>
+                <div class="gestionmrp">
+                    <img src="./assets/conos_Trazalog-07.png" alt="procesos">
+                    <p>
+                        <span>Residuos</span><br>
+                        La trazabilidad de un residuo es el conjunto de procedimientos que permiten conocer su
+                        trayectoria a
+                        lo largo de toda su gestión. desde la generación hasta la disposición final.
+                    </p>
+                </div>
+                <div class="gestionmrp">
+                    <img src="./assets/conos_Trazalog-08.png" alt="procesos">
+                    <p>
+                        <span>BLOCKCHAIN</span><br>
+                        Blockchain técnicamente es un una tecnología de libro mayor distribuido, es la herramienta
+                        por
+                        la
+                        cual logramos total seguridad e inviolabilidad de la información.
+                    </p>
+                </div>
+            </div>
+
+
+
+            <div id="carouselExampleFade" class="carousel slide carousel-fade displayMobile" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <div class="d-block w-70">
+                            <img src="./assets/conos_Trazalog_Mesa-de-trabajo-1.png" alt="procesos">
+                            <p>
+                                <span>Procesos</span> <br>
+                                Este módulo permite gestionar los procesos de negocios de tu organización visibilizando
+                                roles y
+                                responsabilidades dentro del equipo
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-70">
+                            <img src="./assets/conos_Trazalog-04.png" alt="procesos">
+                            <p>
+                                <span>Mantenimiento</span><br>
+                                Con este módulo se puede mantener activo un plan integral de mantenimiento preventivo y
+                                correctivo de todos los equipos.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100">
+                            <img src="./assets/conos_Trazalog-02.png" alt="produccion">
+                            <p>
+                                <span>Producción</span><br>
+                                Sigue el proceso de órdenes de producción, para una gestión eficiente y económica de los
+                                recursos materiales y de trabajo utilizados en cada etapa.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <div class="d-block w-100">
+                            <img src="./assets/conos_Trazalog-05.png" alt="tareas">
+                            <p>
+                                <span>Tareas</span><br>
+                                El modulo tareas se encarga de gestionar y trazar el proceso de asignación, puesta en
+                                producción
+                                y ejecución de todas las actividades.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100">
+                            <img src="./assets/conos_Trazalog-03.png" alt="almacenes">
+                            <p>
+                                <span>Almacenes</span><br>
+                                Permiten conocer el histórico, ubicación y trayectoria de un producto . Se trata de un
+                                sistema
+                                eficaz y necesario para la buena gestión de toda la cadena de suministro.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100">
+                            <img src="./assets/conos_Trazalog-06.png" alt="procesos">
+                            <p>
+                                <span>Pañol</span><br>
+                                Controle sus herramientas de manera fácil y segura identificando y trazando todo los
+                                movimientos
+                                de cada una de ellas, cómo así tambíen de componentes críticos.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100">
+                            <img src="./assets/conos_Trazalog-08.png" alt="procesos">
+                            <p>
+                                <span>BLOCKCHAIN</span><br>
+                                Blockchain técnicamente es un una tecnología de libro mayor distribuido, es la
+                                herramienta por la cual logramos total seguridad e inviolabilidad de la información.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div id="hombres"><img src="./assets/hombre_3.png" alt="hombre"></div>
+        </div>
+        <div id="seccion5">
+            <h3>RAZONES PARA ELEGIR <span>TRAZALOG</span></h3>
+            <div class="razon displayDesk">
+                <div class="razones">
+                    <img src="./assets/cono_capas.png" alt="Accesibilidad">
+                    <p class="tit">Accesibilidad</p>
+                    <p>
+                        Permite iniciar con la solución que más necesites y luego poder adicionar más módulos más
+                        usuario y más unidades de negocios
+                    </p>
+                </div>
+                <div class="razones">
+                    <img src="./assets/cono_flechas.png" alt="trazabilidad">
+                    <p class="tit">Trazabilidad</p>
+                    <p> Permite iniciar con la solución que más necesites y luego poder adicionar más módulos más
+                        usuario y
+                        más
+                        unidades de negocios
+                    </p>
+                </div>
+                <div class="razones">
+                    <img src="./assets/cono_calendario.png" alt="calendario">
+                    <p class="tit">Planificación</p>
+                    <p>
+                        Permite iniciar con la solución que más necesites y luego poder adicionar más módulos más
+                        usuario y más unidades de negocios
+                    </p>
+                </div>
+                <div class="razones">
+                    <img src="./assets/cono_billetes.png" alt="costos">
+                    <p class="tit">Costos y Beneficios</p>
+                    <p>
+                        Permite iniciar con la solución que más necesites y luego poder adicionar más módulos más
+                        usuario y más unidades de negocios
+                    </p>
+                </div>
+            </div>
+
+
+            <div id="carouselExampleFade" class="carousel slide carousel-fade displayMobile" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <div class="d-block w-70">
+                            <img src="./assets/cono_capas.png" alt="Accesibilidad">
+                            <p class="tit">Accesibilidad</p>
+                            <p>
+                                Permite iniciar con la solución que más necesites y luego poder adicionar más módulos
+                                más
+                                usuario y más unidades de negocios
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-70">
+                            <img src="./assets/cono_flechas.png" alt="trazabilidad">
+                            <p class="tit">Trazabilidad</p>
+                            <p> Permite iniciar con la solución que más necesites y luego poder adicionar más módulos
+                                más
+                                usuario y
+                                más
+                                unidades de negocios
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100">
+                            <img src="./assets/cono_calendario.png" alt="calendario">
+                            <p class="tit">Planificación</p>
+                            <p>
+                                Permite iniciar con la solución que más necesites y luego poder adicionar más módulos
+                                más
+                                usuario y más unidades de negocios
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <div class="d-block w-100">
+                            <img src="./assets/cono_billetes.png" alt="costos">
+                            <p class="tit">Costos y Beneficios</p>
+                            <p>
+                                Permite iniciar con la solución que más necesites y luego poder adicionar más módulos
+                                más
+                                usuario y más unidades de negocios
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <button class="displayDesk" onclick="irAgenda()">AGENDÁ TU DEMO</button>
+        </div>
+        <div id="seccion6">
+            <p class="displayDesk">Contamos con experiencia en soluciones de trazabilidad y logística, producción y
+                mantenimiento de
+                maquinarias. </p>
+            <p class="displayDesk"><span>Flexibilidad e integración entre los módulos. </span></p>
+            <p class="displayDesk">Adaptabilidad en costos de adquisición esquemas por rango de usuarios no por cada
+                usuario activo.</p>
+            <h3>TRANSFORMAMOS LA TRAZABILIDAD <span>DE LAS SIGUIENTES INDUSTRIAS</span></h3>
+        </div>
+        <div id="seccion7">
+            <img class="displayDesk" id="compu" src="./assets/Desktop_Mockup_SECCION2.png" alt="computadora">
+            <div class="industrias">
+                <div class="traz">
+                    <div class="trazInd">
+                        <p>Agro industrial</p>
+                        <img src="./assets/Agro_indutrial.png" alt="">
+                    </div>
+                    <div class="trazInd2">
+                        <img src="./assets/mineria.png" alt="">
+                        <p>Proveedores Mineros</p>
+                    </div>
+                </div>
+                <div class="traz">
+                    <div class="trazInd">
+                        <p>Industrial Metalúrgica</p>
+                        <img src="./assets/Industria_Metalurgica.png" alt="">
+                    </div>
+                    <div class="trazInd2">
+                        <img src="./assets/Petroleras.png" alt="">
+                        <p>Petroleras</p>
+                    </div>
+                </div>
+                <div class="traz">
+                    <div class="trazInd">
+                        <p>Industria Metalmecánica</p>
+                        <img src="./assets/Industria_Metalmecanica.png" alt="">
+                    </div>
+                    <div class="trazInd2">
+                        <img src="./assets/Proveedores_Petroleras.png" alt="">
+                        <p>Proveedores de Petroleras</p>
+                    </div>
+                </div>
+                <div class="traz">
+                    <div class="trazInd">
+                        <p>Minería</p>
+                        <img src="./assets/mineria.png" alt="">
+                    </div>
+                    <div class="trazInd2">
+                        <img src="./assets/AutoPartes.png" alt="">
+                        <p>Auto-Partes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="seccion8">
+            <h3><span>NOS INTEGRAMOS</span> CON LAS PLATAFORMAS LÍDERES DE GESTIÓN</h3>
+            <div class="logos">
+                <img id="sap" src="./assets/sap.png" alt="sapBussiness">
+                <img id="wapp" src="./assets/wapp.png" alt="Whatsapp">
+                <img id="tango" src="./assets/Tango.png" alt="Tango">
+            </div>
+        </div>
+        <div id="seccion9">
+            <h4>Dos modalidades de licenciamiento</h4>
+            <div class="modalidades">
+                <div class="modalidades mod2">
+                    <img src="./assets/on_premise.png" alt="onPremise">
+                    <div>
+                        <h6>On Premise</h6>
+                        <p>
+                            Adquirí de manera pertpetua la licencia de uso. Ideal para las compañias de
+                            infrestuctura y
+                            soporte técnico propio.
+                        </p>
+                    </div>
+                </div>
+                <div class="modalidades mod2">
+                    <img src="./assets/nube.png" alt="Cloud">
+                    <div>
+                        <h6>Suscripción en la Nube</h6>
+                        <p>
+                            Accedé a toda la funcionalidad del ERP en la Nube con solo una suscripción mensual.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button class="displayDesk" onclick="irAgenda()">AGENDÁ TU DEMO</button>
+        </div>
+
+    </main>
+
+    <footer>
+        <img class="displayDesk" src="./assets/logo_footer.png" alt="logoMarca">
+        <img class="displayMobile" src="./assets/logo.jpg" alt="logoMarca">
+        <div class="flex">
+            <div id="ubicaciones">
+                <div>
+                    <b>San Juan</b><br>
+                    Av. Libertador Gral. San Martin oeste 1890, San Juan · ARGENTINA <br>
+                    +54 9 264 5 070 782 <br>
+                    mperez@trazalog.com
+                </div>
+                <div>
+                    <b>Mendoza</b><br>
+                    Chacras Park oficina 302, Chacras de Coria, Mendoza, Argentina <br>
+                    +54 9 2617 60-6149 <br>
+                    ventas@trazalog.com
+                </div>
+                <div>
+                    <b>Catamarca</b><br>
+                    Galería firenze pisos 1,2,3, Esquiu 487, San Fernando del Valle de Catamarca <br>
+                    +54 9 264 5 070782 <br>
+                    comercial@trazalog.com
+                </div>
+            </div>
+            <div id="redes">
+                <p>Seguinos en</p>
+                <div id="iconosRedes">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="dark"> </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+    integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+    integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+    crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script src="./script.js"></script>
+
+</html>
